@@ -1,0 +1,5 @@
+%idb
+Person(x) :- M(x) not.
+
+
+// EXITCODE 3

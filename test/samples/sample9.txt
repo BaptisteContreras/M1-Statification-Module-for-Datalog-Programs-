@@ -1,0 +1,11 @@
+%edb
+A(a).
+B().
+C(t,u).
+
+
+%idb
+X() :- A("Hello").
+Y(z,e) :- A(z), C(e,z).
+Z() :- not B(), not T().
+T() :- not A(5).

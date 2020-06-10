@@ -1,0 +1,4 @@
+%idb
+Person(x) :- 1.
+
+//EXITCODE 3

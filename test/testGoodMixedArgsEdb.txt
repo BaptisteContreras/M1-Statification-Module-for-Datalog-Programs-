@@ -1,0 +1,4 @@
+%edb
+Maison(gH,"kqhdsjhqdjk",963).
+
+//EXPECTED 0

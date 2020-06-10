@@ -1,0 +1,5 @@
+%edb
+Maison("a","salut ca va ?","toto").
+Test(l,m,"rpqf").
+
+//EXPECTED 0

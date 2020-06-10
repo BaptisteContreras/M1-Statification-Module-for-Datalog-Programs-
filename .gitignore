@@ -1,0 +1,20 @@
+
+#Idea
+.idea/
+
+# pytest
+.pytest_cache
+__pycache__
+
+# coverage
+htmlcov/
+.coverage
+
+
+# ignore build
+*.interp
+*.tokens
+
+StratifiedProgramLexer.py
+StratifiedProgramParser.py
+StratifiedProgramVisitor.py

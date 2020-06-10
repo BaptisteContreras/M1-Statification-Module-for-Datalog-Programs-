@@ -1,0 +1,14 @@
+%edb
+A(x).
+Toto(z).
+
+
+%idb
+B() :- not C().
+C() :- not D(x).
+D(x) :- A(x), not B(), E().
+E() :- A(x), Recurs(s).
+Z() :- B().
+Recurs(x) :- A(x), not E().
+Recurs(x) :- Toto(x), Recurs(1).
+E(a,b,c) :- Toto(a), not Recurs(c).

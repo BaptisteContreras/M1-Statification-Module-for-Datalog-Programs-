@@ -1,0 +1,8 @@
+%edb
+Maison(gH,k,lM).
+%idb
+Person(x) :- not M(1,"M", lM), not H().
+Titi(x) :- not M(1,"M", lM), Person(x).
+Toto(x,l,m) :- not Person(1,"M", lM), Titi(x).
+
+// EXITCODE 0

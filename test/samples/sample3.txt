@@ -1,0 +1,14 @@
+%edb
+Person(x).
+Beer(x).
+Vegetables(x).
+Water(x).
+Meat(x).
+
+%idb
+Livelonger(x):- Person(x), not Havebadhabits(x).
+Havebadhabits(x):- not Eatvegetables(x), not Drinkwater(x), Person(x).
+Eatmeat(x):- Love(x,y), Meat(y), not Eatvegetables(x).
+Eatvegetables(x):- Love(x,y), Vegetables(y).
+Drinkwater(x):- Love(x,y), Water(y), not Drinkbeer(x).
+Drinkbeer(x):- Love(x,y), Beer(y).

@@ -1,0 +1,4 @@
+%idb
+Person(x) :- not M("Salut ca va ?s","M", "za"), not H("l",l).
+
+//EXPECTED 0

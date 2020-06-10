@@ -1,0 +1,5 @@
+%edb
+not Person(x).
+
+
+// EXITCODE 3

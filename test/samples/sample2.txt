@@ -1,0 +1,16 @@
+%edb
+Person(pID,name,sex,married).
+Home(hID, pId, address).
+Child(pId, pIdH, pIDF).
+
+%idb
+Man(x) :- Person(id,x,"M",m).
+Women(x) :- not Man(x).
+Singleman(x) :- Man(x), not Husband(x).
+Married(x) :- Person(id,x,s,1).
+Husband(x) :- Man(x), Married(x).
+Owner(hID, x):- Person(x,_,_,_), Home(hID, x,_,_), not Girl(x), not Boy(x).
+Parent(x,y) :- Child(y, x, _).
+Parent(x,y) :- Child(y, _, x).
+Girl(x) :- Woman(x), Child(x,_, _).
+Boy(x) :- not Girl(x).

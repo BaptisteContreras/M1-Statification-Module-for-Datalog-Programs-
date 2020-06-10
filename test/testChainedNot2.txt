@@ -1,0 +1,5 @@
+%idb
+Person(x) :- not not not M(x).
+
+
+// EXITCODE 3

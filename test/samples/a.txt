@@ -1,0 +1,14 @@
+%edb
+R(x).
+Rr(x).
+
+
+%idb
+S() :- R(x), Rr(x).
+T(x,y) :- not R(x), not Rr(x).
+Z(x) :-  not U(x).
+T(x,y) :- not R(x), not Rr(x), T(x,y).
+T(x,y) :- not R(x), T(y,x).
+V(x) :- not S(), not Z(x).
+U(x) :- R(x), S(), not T(1,2).
+

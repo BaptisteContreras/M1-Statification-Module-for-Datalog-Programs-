@@ -1,0 +1,4 @@
+%idb
+Person(x) :- not M(1,2, 963), not H(h,56).
+
+//EXPECTED 0

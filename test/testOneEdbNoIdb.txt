@@ -1,0 +1,4 @@
+%edb
+Maison(gH,k,lM).
+
+// EXITCODE 0

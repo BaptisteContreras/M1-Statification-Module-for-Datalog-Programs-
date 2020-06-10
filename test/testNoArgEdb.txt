@@ -1,0 +1,4 @@
+%edb
+Maison().
+
+// EXITCODE 0

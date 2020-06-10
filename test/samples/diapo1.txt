@@ -1,0 +1,7 @@
+%edb
+A(x, y).
+
+
+%idb
+B() :- not C("Toto").
+C(q) :- A(1, q).

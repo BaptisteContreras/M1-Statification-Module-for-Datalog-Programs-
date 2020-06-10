@@ -1,0 +1,4 @@
+%idb
+peRson(x) :- not M(1,"M", lM), not H().
+
+// EXITCODE 3

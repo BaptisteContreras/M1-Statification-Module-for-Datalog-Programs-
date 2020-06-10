@@ -1,0 +1,8 @@
+%edb
+Person(x).
+Alone(x).
+
+%idb
+Child(x):- Orphan(x).
+Child(x,y,z):- not Orphan(x), Person(y), Person(z).
+Orphan(x):- Alone(x).

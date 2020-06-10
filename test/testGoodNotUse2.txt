@@ -1,0 +1,2 @@
+%idb
+Person(x) :- M(1,"M", lM), not H().

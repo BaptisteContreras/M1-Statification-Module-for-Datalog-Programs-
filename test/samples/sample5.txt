@@ -1,0 +1,8 @@
+%edb
+Person(pID,name,sex,married).
+Child(pIDC, pIDP ).
+
+%idb
+Parent(x, y) :- Child(y,x).
+Ancestor(x,y) :- Parent(x, y).
+Ancestor(x,y) :- Parent(x,z), Ancestor(z,y).

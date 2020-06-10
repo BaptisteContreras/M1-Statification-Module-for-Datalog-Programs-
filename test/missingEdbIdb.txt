@@ -1,0 +1,6 @@
+Maison(gH,k,lM).
+Person(x) :- not M(1,"M", lM), not H().
+
+// EXITCODE 1
+// EXPECTED
+//Not correct edb declaration

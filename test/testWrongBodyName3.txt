@@ -1,0 +1,5 @@
+%idb
+Person(x) :- mMm(1,"M", lM), not H().
+
+
+// EXITCODE 3

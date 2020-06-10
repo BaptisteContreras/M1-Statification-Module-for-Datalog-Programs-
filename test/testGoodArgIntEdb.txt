@@ -1,0 +1,6 @@
+%edb
+Maison(2,9,8566).
+Test(l,5,p).
+
+
+//EXPECTED 0

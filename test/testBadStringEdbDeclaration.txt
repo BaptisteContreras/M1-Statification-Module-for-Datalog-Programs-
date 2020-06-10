@@ -1,0 +1,4 @@
+%edb
+Maison('toto',k,lM).
+
+//EXITCODE 3

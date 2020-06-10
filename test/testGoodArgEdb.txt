@@ -1,0 +1,5 @@
+%edb
+Maison(gH,k,lM).
+
+
+//EXPECTED 0

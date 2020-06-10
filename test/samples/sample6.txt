@@ -1,0 +1,7 @@
+%edb
+A(x).
+B(y).
+
+%idb
+C(x,y) :- A(x), B(y).
+Recur(x,y) :- C(x, z), not Recur(x,z).

@@ -1,0 +1,5 @@
+%idb
+Person(x) :- not M(), not H().
+Titi() :- not M(), Person(x).
+
+// EXITCODE 0

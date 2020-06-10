@@ -1,0 +1,21 @@
+stages:
+  - test
+
+
+test:
+  stage: test
+  image: openjdk:11-jdk-slim
+  before_script:
+    - apt-get update -qq
+    - apt-get install -qq build-essential
+    - apt install -y -qq python3-pip
+    - export ANTLR4="java -jar Antlr4/antlr-4.7.1-complete.jar"
+    - alias antlr4="java -jar Antlr4/antlr-4.7.1-complete.jar"
+    - pip3 install --user pytest-cov
+    - pip3 install --user --upgrade coverage
+    - pip3 install antlr4-python3-runtime==4.7.1
+    - python3 --version
+
+  script:
+    - make
+    - make tests
